@@ -1,0 +1,452 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.page-home{
+display: flex;
+flex-wrap: wrap;
+}
+
+/******************* Header***********************/
+/*************************************************/
+.head{
+width: 100%;
+height: 100px;
+background-color: #d8d8d8;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo{
+margin: 5px;
+margin-left: 20px;
+width: 20% ;
+height:80px ;
+display: flex; 
+justify-content: center;
+align-items: center;
+}
+.text-logo{
+margin: 0 auto;
+font-size: 30px;
+font-family: 'Dela Gothic One';
+color: #2462e7;
+}
+
+.content-btnAdmin{
+width: 50% ;
+display: flex;  
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.a{
+width: 165px;
+height: 30px;
+margin-left: 15px;
+border-radius: 10px;
+background-color: rgb(228, 200, 163);
+display: flex;  
+justify-content: center;
+align-items: center;
+}
+.a :hover,.btn-cerrarsesion :hover{
+color: #7f66b9;
+cursor: pointer;
+}
+a{
+ text-decoration: none;
+ display: inline-block;
+ margin-left: 10px;
+}
+
+
+/************Contenido principal******************/
+/*************************************************/
+.contenedor-secciones{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.btn-Add{  
+  margin-top: 8px;
+  margin-left: 20px;
+  text-decoration: none; 
+  font-size: 50px;
+  position: fixed;  
+}
+.btnAdd {
+  color: rgb(0, 0, 0); 
+}
+.btnAdd:hover {
+  color: rgba(5, 5, 5, 0.4);  
+}
+
+
+
+
+.info-head-clientes{
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.titulocliente{
+  width: 50%;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 2px solid #000000;
+  display: flex;
+  justify-content: center;
+  font-family: 'Dela Gothic One';
+}
+
+
+.catalogcliente{
+  width: 50%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container{
+  border-radius: 10px;
+  background: rgb(224, 224, 224);
+  font-size: 17px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container input,button{
+  background-color: rgb(224, 224, 224);
+  border: none;
+  outline: none;
+  margin-left:5px;
+  margin-right: 5px;
+  
+}
+.search-container button:hover{
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+.cards-clientes{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.CardInfoCliente{
+  width: 100%;
+  height: 170px;
+  padding: 5px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  padding: 8px;
+  background-color: #ceb9ff;
+  text-align: center;
+  font-family: arial;
+  transition: 0.3s;  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.cardtext{
+  width: 100%;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content:space-between;
+}
+
+.fechacotiz{
+  padding: 3px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.btncrud{
+  margin-top: 10px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.btncrud:hover {
+  opacity: 0.7;
+}
+
+
+
+
+/*******************Pie de pagina*****************/
+/*************************************************/
+.footer{  
+width: 100%;
+height: 90px;
+margin-top: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #ff8c88;
+}
+
+
+
+/***************VENTANA EMERGENTE ADD CLIENTE*/
+/*********************************************/
+.poppup-facturaProv{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  visibility: hidden;
+}
+.poppup-facturaProv.activeFacturaProv{ 
+  visibility: visible;
+}
+.init-facturaProv{
+  margin-top: 20px;
+  background: #f8f8f8;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  font-family:'Roboto Condensed', sans-serif;
+  border-radius: 10px;
+  padding: 20px;  
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-input{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.in-cli{
+  margin-left: 30px;
+}
+
+.op-cli{
+  display: flex;
+  justify-content: space-between;
+}
+
+.in-product{
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+.producto{
+  display: flex;
+  justify-content: center;
+}
+.producto input{
+  margin-left: 10px;
+}
+.calc-precio label{
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.precio{
+  display: flex;
+  justify-content: center;
+}
+.precio h2{
+  margin-left: 40px;  
+}
+.calc-precio{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.in-product hr{
+  width: 100%;
+  height: 3px;
+  border: 2px solid #c5c5c5;
+}
+
+.btns-producto{
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+  justify-content:space-between;
+}
+
+.add-delete{  
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+}
+.add-delete:hover{
+   cursor: pointer;
+   color: #585858;
+  }
+
+.content-input input{
+  margin-bottom: 10px;
+  padding-left: 5px;
+  width: 100%;
+  height: 30px;
+  border-radius: 8px;
+  line-height: 30px;
+  text-align: left;
+  font-size: 15px;
+  border: 1px solid #bbbbbb;
+  text-decoration: none;
+
+}
+
+.btns-facturaProv{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.button{
+  width: 25%;
+  height: 30px; 
+  text-align: center;  
+  font-weight: bolder;
+  cursor: pointer;  
+  border:0px;
+  border-radius: 8px;
+}
+
+.btn-submit{
+  background-color: #ff8e32;
+  font-size: 13px;
+  color: #000000;
+}
+.btn-submit:hover{
+  background-color: #e27a24;
+}
+
+.btn-close{
+  background-color: #cecece;
+  font-size: 16px;
+  color: #000000;
+  margin-left: 50px;
+}
+.btn-close:hover{
+  background-color: #b4b4b4;
+}
+
+/*********************************************/
+/*********************************************/
+
+
+
+/* MOVILE Styles */
+@media only screen and (max-width: 400px)
+{
+  .logo{
+    margin-left: 50px;
+  }
+  .head{
+    flex-wrap: wrap;      
+  }
+  .a,.btn-cerrarsesion{
+    margin-bottom: 10px;
+  }
+  .content-btnAdmin{
+    margin-right: 10px;
+  }
+
+
+  .titulocliente{
+    width: 50%;
+    height: 50px;
+    font-size: x-small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+  .footer{ 
+      height: 200px;
+  }
+
+  .catalogcliente{
+    width: 60%;
+  }
+  .init-facturaProv{width: 100%;}
+
+
+}
+
+/* TABLET Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px)
+{
+  .logo{
+    margin-left: 30px;
+  }
+  .btn-ad,.btn-op{
+    margin-bottom: 10px;
+   }
+  .CardInfoCliente{
+    width: 50%;
+  }
+
+  .btn-Add{  
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  
+  .titulocliente{
+    width: 70%;
+    height: 50px;
+    font-size: x-small;    
+  }
+
+  .init-facturaProv{width: 70%;}
+
+
+  
+
+
+}
+
+/* DESKTOP Styles */
+@media only screen and (min-width: 961px)
+{
+
+  .page-home { 
+    width: 1000px;
+    margin:0 auto;
+
+    }
+    
+  .CardInfoCliente{
+    width: 33.333%;
+  }
+ 
+}

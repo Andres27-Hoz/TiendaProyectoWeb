@@ -1,0 +1,77 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.page-home{
+display: flex;
+flex-wrap: wrap;
+}
+
+/******************* Header***********************/
+/*************************************************/
+
+/*******************Pie de pagina*****************/
+/*************************************************/
+.footer{  
+width: 100%;
+height: 90px;
+margin-top: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #ff8c88;
+}
+
+/* MOVILE Styles */
+@media only screen and (max-width: 400px)
+{
+  .logo{
+    margin-left: 50px;
+  }
+  .head{
+    flex-wrap: wrap;      
+  }
+  .a,.btn-cerrarsesion{
+    margin-bottom: 10px;
+  }
+  .content-btnAdmin{
+    margin-right: 10px;
+  }
+
+
+  
+
+  .footer{ 
+      height: 200px;
+  }
+
+}
+
+/* TABLET Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px)
+{
+  .logo{
+    margin-left: 30px;
+  }
+  .btn-ad,.btn-op{
+    margin-bottom: 10px;
+  }
+  
+
+}
+
+/* DESKTOP Styles */
+@media only screen and (min-width: 961px)
+{
+
+  .page-home { 
+    width: 1000px;
+    margin:0 auto;
+
+    }
+    
+  
+}

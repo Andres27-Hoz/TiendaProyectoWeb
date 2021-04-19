@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.page-home{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Header */
+
+.head{
+  width: 100%;
+  height: 100px;
+  background-color: #d8d8d8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  margin: 5px;
+  margin-left: 20px;
+  width: 20% ;
+  height:80px ;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.text-logo{
+  margin: 0 auto;
+  font-size: 30px;
+  font-family: 'Dela Gothic One';
+  color: #2462e7;
+}
+
+.content-btnAdmin{
+  width: 50% ;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.a{
+  width: 165px;
+  height: 30px;
+  margin-left: 15px;
+  border-radius: 10px;
+  background-color: rgb(228, 200, 163);
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+.a :hover,.btn-cerrarsesion :hover{
+  color: #7f66b9;
+  cursor: pointer;
+}
+a{
+   text-decoration: none;
+   display: inline-block;
+   margin-left: 10px;
+ }
+
+
+/*Contenido principal*/
+.contenedor-secciones{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.seccion{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ordenes-trabajo{
+    background-color: #a634b1;
+
+}
+
+.cotizaciones{
+    background-color: #d44854;
+
+}
+
+.clientes{
+    background-color: #4f98f8;
+  }
+
+
+.productos{
+  background-color: #bb22ff;
+}
+
+.proveedores{
+    background-color: #9fecff;
+  }
+  
+
+.compras{
+  background-color: #d5f883;
+}
+
+
+/*Pie de pagina*/
+.footer{  
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff8c88;
+}
+
+/* MOVILE Styles */
+@media only screen and (max-width: 400px)
+  {
+    .logo{
+      margin-left: 50px;
+    }
+    .head{
+      flex-wrap: wrap;      
+    }
+    .btn-ad,.btn-op{
+      margin-bottom: 10px;
+    }
+    .content-btnAdmin{
+      margin-right: 10px;
+    }
+
+    .ordenes-trabajo,
+    .cotizaciones,
+    .productos,
+    .clientes,
+    .compras,
+    .proveedores {
+      height: 150px;
+    } 
+
+    .footer{ 
+        height: 200px;
+    }
+
+  }
+
+/* TABLET Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px)
+  {
+    .logo{
+      margin-left: 30px;
+    }
+ 
+    .ordenes-trabajo,
+    .cotizaciones,
+    .productos,
+    .clientes,
+    .compras,
+    .proveedores {
+      width: 50%;  
+      height: 200px;
+    } 
+
+    .btn-ad,.btn-op{
+      margin-bottom: 10px;
+    }
+}
+
+/* DESKTOP Styles */
+@media only screen and (min-width: 961px)
+  {
+
+    .page-home { 
+      width: 1000px;
+      margin:0 auto;
+
+      }
+      
+  
+    .ordenes-trabajo,
+    .cotizaciones,
+    .productos,
+    .clientes,
+    .compras,
+    .proveedores {
+      width: 33.3333%;  
+      height: 200px;
+    } 
+
+   
+}

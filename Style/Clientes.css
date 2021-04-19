@@ -1,0 +1,357 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.page-home{
+display: flex;
+flex-wrap: wrap;
+}
+
+/******************* Header***********************/
+/*************************************************/
+.head{
+width: 100%;
+height: 100px;
+background-color: #d8d8d8;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo{
+margin: 5px;
+margin-left: 20px;
+width: 20% ;
+height:80px ;
+display: flex; 
+justify-content: center;
+align-items: center;
+}
+.text-logo{
+margin: 0 auto;
+font-size: 30px;
+font-family: 'Dela Gothic One';
+color: #2462e7;
+}
+
+.content-btnAdmin{
+width: 50% ;
+display: flex;  
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.a{
+width: 165px;
+height: 30px;
+margin-left: 15px;
+border-radius: 10px;
+background-color: rgb(228, 200, 163);
+display: flex;  
+justify-content: center;
+align-items: center;
+}
+.a :hover,.btn-cerrarsesion :hover{
+color: #7f66b9;
+cursor: pointer;
+}
+a{
+ text-decoration: none;
+ display: inline-block;
+ margin-left: 10px;
+}
+
+
+/************Contenido principal******************/
+/*************************************************/
+.contenedor-secciones{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+
+.info-head-clientes{
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.titulocliente{
+  width: 50%;
+  height: 50px;
+  margin-bottom: 20px;
+  border: 2px solid #000000;
+  display: flex;
+  justify-content: center;
+  font-family: 'Dela Gothic One';
+}
+
+
+.catalogcliente{
+  width: 50%;
+  height: 50px;
+  font-family: 'Roboto';
+  display: flex;
+  justify-content: center;
+}
+.p-catalogoclientes{
+  color:#000000;
+}
+.p-catalogoclientes:hover{
+  cursor: pointer;
+  color:#888888;
+}
+
+hr {
+  height:4px;
+  border-width:0;
+  box-shadow:  0 1px 2px 0 rgba(180, 180, 180, 0.4);
+  background-color:rgb(14, 13, 13)
+}
+
+
+.cards-clientes{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.CardInfoCliente{
+  width: 100%;
+  height: 270px;
+  padding: 5px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  padding: 8px;  
+  background-color: #ceb9ff;
+  text-align: center;
+  font-family: arial;
+  transition: 0.3s;  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.cardtext{
+  width: 100%;
+  margin-bottom: 8px;
+  display: flex;
+  color: #58575c;
+  justify-content:space-between;
+}
+
+.btncrud{
+  margin-top: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.btncrud:hover {
+  opacity: 0.7;
+}
+
+
+.btn-Add{  
+  margin-top: 8px;
+  margin-left: 20px;
+  text-decoration: none; 
+  font-size: 50px;
+  position: fixed;  
+}
+.btnAdd {
+  color: rgb(0, 0, 0); 
+}
+.btnAdd:hover {
+  color: rgba(5, 5, 5, 0.4);  
+  cursor: pointer;
+}
+
+
+/*******************Pie de pagina*****************/
+/*************************************************/
+.footer{  
+width: 100%;
+height: 90px;
+margin-top: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #ff8c88;
+}
+
+/***************VENTANA EMERGENTE ADD CLIENTE*/
+/*********************************************/
+.poppup-add-cliente{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.poppup-add-cliente.activeAddCliente{ 
+  visibility: visible;
+}
+.init-add-cliente{
+  background: #f8f8f8;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+  font-family:'Roboto Condensed', sans-serif;
+  border-radius: 10px;
+  padding: 20px;  
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-input{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.content-input input{
+  margin-bottom: 10px;
+  padding-left: 5px;
+  width: 100%;
+  height: 30px;
+  border-radius: 8px;
+  line-height: 30px;
+  text-align: left;
+  font-size: 15px;
+  border: 1px solid #bbbbbb;
+  text-decoration: none;
+
+}
+
+.btns-AddCliente{
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.button{
+  width: 25%;
+  height: 30px; 
+  display: block;
+  text-align: center;  
+  font-weight: bolder;
+  cursor: pointer;  
+  border:0px;
+  border-radius: 4px;
+}
+
+.btn-submit{
+  background-color: #ff8e32;
+  font-size: 13px;
+  color: #000000;
+}
+.btn-submit:hover{
+  background-color: #e27a24;
+}
+
+.btn-close{
+  background-color: #cecece;
+  font-size: 16px;
+  color: #000000;
+}
+.btn-close:hover{
+  background-color: #b4b4b4;
+}
+
+/*********************************************/
+/*********************************************/
+
+
+
+/* MOVILE Styles */
+@media only screen and (max-width: 400px)
+{
+  .logo{
+    margin-left: 50px;
+  }
+  .head{
+    flex-wrap: wrap;      
+  }
+  .a,.btn-cerrarsesion{
+    margin-bottom: 10px;
+  }
+  .content-btnAdmin{
+    margin-right: 10px;
+  }
+
+
+  .titulocliente{
+    width: 80%;
+  }
+
+
+  .footer{ 
+      height: 200px;
+  }
+
+
+  .btns-AddCliente{
+    flex-direction: column;
+  }
+  
+  
+  .button{
+    width: 100%;
+    height: 30px;
+  } 
+  .btn-close{ margin-top: 10px;}
+
+
+}
+
+/* TABLET Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px)
+{
+  .logo{
+    margin-left: 30px;
+  }
+  .btn-ad,.btn-op{
+    margin-bottom: 10px;
+  }
+  .CardInfoCliente{
+    width: 50%;
+    height: 320px;
+  }
+  
+
+  
+
+
+}
+
+/* DESKTOP Styles */
+@media only screen and (min-width: 961px)
+{
+
+  .page-home { 
+    width: 1000px;
+    margin:0 auto;
+
+    }
+    
+  .CardInfoCliente{
+    width: 33.333%;
+  }
+ 
+}
